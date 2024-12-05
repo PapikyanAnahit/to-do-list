@@ -1,0 +1,183 @@
+<!-- <html>                                1
+<h1 id="title">Hello!</h1>
+<script>
+    document.getElementById("title").textContent = "New Text";
+</script>
+</html> -->
+
+
+<!-- <html>                           2
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<script>
+    document.getElementsByClassName("box")[0].style.backgroundColor = "red";
+</script>
+</html> -->
+
+
+<!-- <html>                        3
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<script>
+    console.log(document.getElementsByTagName("p")[0].innerHTML);
+</script>
+</html> -->
+
+
+<!-- <html>                               4
+<p class="par">This is a paragraph.</p>
+<script>
+    document.querySelector(".par").style.border = "2px solid red";
+</script>
+</html> -->
+
+
+<!-- <html>                              5
+<p class="par">This is a paragraph 1.</p>
+<p class="par">This is a paragraph 2.</p>
+<script>
+    var elements = document.querySelectorAll(".par");
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].style.fontSize = "20px";
+    }
+</script>
+</html> -->
+
+
+ 
+<!-- <html>                           6
+<body>
+<script>
+    var newDiv = document.createElement("div");  
+    newDiv.textContent = "This is a new div";   
+    document.body.appendChild(newDiv);          
+</script>
+</body>
+</html> -->
+
+
+<!-- <html>                    7
+<body>
+<div id="myDiv">This is a div to remove.</div>
+<div id="myDiv_1">Hello!</div>
+<script>
+    var element = document.getElementById("myDiv");
+    document.body.removeChild(element);
+</script>
+</body>
+</html> -->
+
+
+<!-- <html>                     8
+<body>
+<img id="myImage" src="https://wallpapers.com/images/featured/beautiful-ocean-pictures-33b2ht9d8bvriqu6.jpg" alt="Ocean">
+<script>
+    document.getElementById("myImage").src = "https://thumbs.dreamstime.com/b/sunrise-over-beach-cancun-beautiful-mexico-40065727.jpg";
+</script>
+</body>
+</html> -->
+
+
+<!-- <html>                          9
+<body>
+<p id="myParagraph">This is a paragraph.</p>
+<script>
+    document.getElementById("myParagraph").classList.add("newClass");
+</script>
+</body>
+</html> -->
+
+
+<!-- <html>                 10
+<body>
+<p id="myParagraph">This is a paragraph.</p>
+<button onclick="document.getElementById('myParagraph').classList.toggle('hey')">Toggle Class</button>
+</body>
+</html> -->
+
+
+<!-- <html>            11
+<body>
+<p id="myParagraph">This is a paragraph.</p>
+<button onclick="document.getElementById('myParagraph').style.color = 'blue'; 
+document.getElementById('myParagraph').style.fontSize = '20px';">Change Styles</button>
+</body>
+</html> -->
+
+
+<!-- <html>                        12
+<body>
+<button onclick="addText()">Add Text</button>
+<div id="myDiv"></div>
+<script>
+    function addText() {
+        var newElement = document.createElement("p"); 
+        newElement.textContent = "This is a new paragraph!"; 
+        document.getElementById("myDiv").appendChild(newElement); 
+    }
+</script>
+</body>
+</html> -->
+
+
+<!-- <html>              13
+<body>
+<button onclick="addHTML()">Add HTML</button>
+<div id="myDiv"></div>
+
+<script>
+    function addHTML() {
+        document.getElementById("myDiv").innerHTML = "<h2>This is a heading</h2><p>This is a paragraph.</p>";
+    }
+</script>
+</body>
+</html> -->
+
+
+<!-- <html>                14
+<body>
+<button onclick="this.textContent = 'You Clicked Me!'">Click Me!</button>
+</body>
+</html> -->
+
+
+<!-- <html>                 16
+<body>
+<div id="myDiv"></div>
+<button onclick="addItems()">Add Items</button>
+<script>
+    function addItems() {
+        for (let i = 1; i <= 5; i++) {
+            var newItem = document.createElement("p"); 
+            newItem.textContent = "Item " + i; 
+            document.getElementById("myDiv").appendChild(newItem); 
+        }
+    }
+</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>                  17
+<html>
+<body>
+<button onclick="document.getElementById('para').style.display = 'none'">Hide</button>
+<button onclick="document.getElementById('para').style.display = 'block'">Show</button>
+<p id="para">This is a paragraph that can be hidden or shown.</p>
+</body>
+</html> -->
+
+
+<!-- <html>                  18
+<body>
+<p id="myParagraph" style="position: relative;">This paragraph will move to the right when you click the button.</p>
+<button onclick="moveRight()">Move Right</button>
+<script>
+    let currentPosition = 0;  
+    function moveRight() {
+        currentPosition += 10;  
+        document.getElementById("myParagraph").style.left = currentPosition + "px";  
+    }
+</script>
+</body>
+</html> -->
