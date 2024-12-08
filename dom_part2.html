@@ -1,0 +1,151 @@
+<!-- <html>                                1
+<h2 id = "title" Hello world!></h2>
+<script>
+    document.getElementById("title").textContent = "My new text";
+</script>
+</html> -->
+
+ 
+<!-- <html>                                  lr
+  <h2 class="class1">This is class1 </h2>
+  <h2 class="class2">This is class2 </h2>
+  <script>
+    document.getElementsByClassName("class1")[0].textContent = "My new text";
+  </script>
+</html> -->
+
+
+<!-- <html>                                   lr
+<h2 class="class1">This is class1</h2>
+<h2 class="class2">This is class2</h2>
+<script>
+    document.getElementsByClassName("class1")[0].style.color = "red";
+</script>
+</html> -->
+
+
+<!-- <html>                                     2                            
+<h2 class="class1">This is class1</h2>
+<h2 class="class2">This is class2</h2>
+<script>
+    document.getElementsByClassName("class1")[0].style.backgroundColor = "red";
+</script>
+</html> -->
+
+
+<!-- <html>                         3
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<script>
+    console.log(document.getElementsByTagName("p")[0].innerHTML);
+</script>
+</html> -->
+
+<!-- <html>                                 4
+<p class="title">This is a paragraph</p>
+<script>
+    document.querySelector(".title").style.border = "2px solid red"
+</script>
+</html> -->
+
+
+<!-- <html>                              5
+<p class="par">This is a paragraph 1.</p>
+<p class="par">This is a paragraph 2.</p>
+<script>
+    var elements = document.querySelectorAll(".par");
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].style.fontSize = "30px";
+    }
+</script>
+</html> -->
+
+
+<!-- <html>                                 6                           
+<div class="title">This is a paragraph</div>
+<script>
+    let newdiv = document.createElement("div");
+    newdiv.textContent = "This is new div";
+    document.body.appendChild(newdiv);
+</script>
+</html> -->
+
+
+<!-- <html>                                   7                               
+<div id="title">This is a paragraph1</div>
+<div id="other title">This is a paragraph2</div>
+<script>
+    var element = document.getElementById("title");
+    document.body.removeChild(element);
+</script>
+</html> -->
+
+
+<!-- <html>                     8
+<body>
+<img id="my_image" src="https://wallpapers.com/images/featured/beautiful-ocean-pictures-33b2ht9d8bvriqu6.jpg" alt="Ocean">
+<script>
+    document.getElementById("my_image").src = "https://thumbs.dreamstime.com/b/sunrise-over-beach-cancun-beautiful-mexico-40065727.jpg";
+</script>
+</body>
+</html> -->
+
+
+<!-- <html>                                   9
+<p id="my_element">This is element</p>
+<script>
+    document.getElementById("my_element").classList.add("this_is_new_class");
+</script>
+</html> -->
+
+
+<!-- <html>                10
+<body>
+<p id="myParagraph">This is a paragraph.</p>
+<button onclick="document.getElementById('myParagraph').classList.toggle('hey')">Toggle Class</button>
+</body>
+</html> -->
+
+
+<!-- <html>                 11
+<body>
+<p id="myParagraph">This is a paragraph.</p>
+<button onclick="document.getElementById('myParagraph').style.color = 'red'; 
+document.getElementById('myParagraph').style.fontSize = '60px';">Change Styles</button>
+</body>
+</html> -->
+
+
+<!-- <html>                          12
+<p id="my_id">This is title</p>
+<script>
+    document.getElementById("my_id").innerText = "My new text"
+</script>
+</html> -->
+
+
+<!-- <html>                            13
+<p id="my_id">This is title</p>
+<p id="my_other_id">This is title</p>
+<script>
+    document.getElementById("my_id").innerHTML = "My new text"
+    document.getElementById("my_other_id").innerHTML = "My new other text"
+</script>
+</html> -->
+
+
+<!-- <html>                                 14
+<div id="my_div">This is a div</div>
+<p id="my_paragraph">This is a paragraph</p>
+<script>
+document.getElementById("my_div").innerHTML = "<h2>New heading inside div</h2><p>Paragraph inside div</p>";
+document.getElementById("my_paragraph").innerHTML = "<div>Bold text</div> and <em>italic text</em>";
+</script>
+</html> -->
+
+
+
+
+
+
+
