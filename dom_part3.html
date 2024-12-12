@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>                    16
+<html>                              
+<head>
+    <title> My_div </title>
+</head>
+
+<div id="my_div"></div>
+<script>
+  const div = document.getElementById("myDiv");
+  for (let i = 1; i <= 5; i++) {
+    const new_div = document.createElement("div");
+    new_div.textContent = "Item " + i;
+    div.appendChild(new_div);
+  }
+</script>
+</html> -->
+
+
+<!-- <!DOCTYPE html>                           17
+<html>
+<body>
+    <p id="myParagraph">This is a paragraph.</p>
+    <button onclick="document.getElementById('myParagraph').style.display = 'none'">Hide</button>
+    <button onclick="document.getElementById('myParagraph').style.display = 'block'">Show</button>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>                18
+<html>
+<body>
+<p id="myParagraph" style="position: relative;">You click the button.</p>
+<button onclick="moveRight()">Move Right</button>
+<script>
+    let currentPosition = 0;  
+    function moveRight() {
+        document.getElementById("myParagraph").style.left = (currentPosition += 10) + "px";  
+    }
+</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>                          19
+<html>
+<body>
+<div id="counter">Click count </div>
+<button onclick="Counter()">Click Me</button>
+<script>
+    let count = 0;
+    function Counter() {
+        count += 1;
+        document.getElementById("counter").textContent = count;
+    }
+</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>                           20
+<html>
+<body>
+    <p id="item_in">Type here</p>
+    <button onclick="addItem()">Add</button>
+    <div id="item_list"></div>
+    <script>
+        function addItem() {
+            const list = document.getElementById("item_list");
+            const item = document.createElement("div");
+            item.textContent = document.getElementById("item_in").textContent;
+            list.appendChild(item);
+        }
+    </script>
+</body>
+</html> -->
