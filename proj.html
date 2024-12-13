@@ -44,44 +44,6 @@
 
 
 
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>To-Do List</title>
-</head>
-<body>
-    <h1>To-Do List</h1>
-    <input id="taskInput">
-    <button onclick="addTask()">Add Task</button>
-    <ul id="taskList"></ul>
-
-    <script>
-        function addTask() {
-            const taskInput = document.getElementById('taskInput'); // Վերցնում ենք տեքստի դաշտը
-            const taskText = taskInput.value; // Ստանում ենք առաջադրանքի տեքստը
-
-            if (taskText === '') { // Եթե դաշտը դատարկ է
-                alert('Please enter a task!'); // Ցուցադրում ենք ծանուցում
-                return; // Դուրս ենք գալիս ֆունկցիայից
-            }
-
-            const taskList = document.getElementById('taskList'); // Վերցնում ենք ցուցակը
-            const taskItem = document.createElement('li'); // Ստեղծում ենք նոր առաջադրանք
-            taskItem.textContent = taskText; // Նոր առաջադրանքին ավելացնում ենք տեքստը
-
-            const deleteButton = document.createElement('button'); // Ստեղծում ենք ջնջելու կոճակ
-            deleteButton.textContent = 'Delete'; // Ավելացնում ենք կոճակին տեքստ
-            deleteButton.onclick = function () { // Երբ կտտացնում ենք ջնջելու կոճակին
-                taskList.removeChild(taskItem); // Ջնջում ենք առաջադրանքը ցուցակից
-            };
-
-            taskItem.appendChild(deleteButton); // Կցում ենք ջնջելու կոճակը առաջադրանքին
-            taskList.appendChild(taskItem); // Ավելացնում ենք առաջադրանքը ցուցակին
-            taskInput.value = ''; // Մաքրում ենք տեքստի դաշտը
-        }
-    </script>
-</body>
-</html> -->
 
 
 
