@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input id="task_input">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+    
+    <script>
+        function addTask() {
+            const task_input = document.getElementById("task_input");
+            if (task_input.value === "") {
+                console.log("Please enter a task");
+                return;
+            }
+            const task_list = document.getElementById("taskList");
+            const task_item = document.createElement("li");
+            task_item.textContent = task_input.value;
+            const delete_button = document.createElement("button");
+            delete_button.textContent = "Delete";
+            delete_button.classList.add("delete");
+            delete_button.onclick = function() {
+                task_list.removeChild(task_item);
+            };
+            task_item.appendChild(delete_button);
+            task_list.appendChild(task_item);
+            task_input.value = "";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input id="taskInput">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById('taskInput'); // Վերցնում ենք տեքստի դաշտը
+            const taskText = taskInput.value; // Ստանում ենք առաջադրանքի տեքստը
+
+            if (taskText === '') { // Եթե դաշտը դատարկ է
+                alert('Please enter a task!'); // Ցուցադրում ենք ծանուցում
+                return; // Դուրս ենք գալիս ֆունկցիայից
+            }
+
+            const taskList = document.getElementById('taskList'); // Վերցնում ենք ցուցակը
+            const taskItem = document.createElement('li'); // Ստեղծում ենք նոր առաջադրանք
+            taskItem.textContent = taskText; // Նոր առաջադրանքին ավելացնում ենք տեքստը
+
+            const deleteButton = document.createElement('button'); // Ստեղծում ենք ջնջելու կոճակ
+            deleteButton.textContent = 'Delete'; // Ավելացնում ենք կոճակին տեքստ
+            deleteButton.onclick = function () { // Երբ կտտացնում ենք ջնջելու կոճակին
+                taskList.removeChild(taskItem); // Ջնջում ենք առաջադրանքը ցուցակից
+            };
+
+            taskItem.appendChild(deleteButton); // Կցում ենք ջնջելու կոճակը առաջադրանքին
+            taskList.appendChild(taskItem); // Ավելացնում ենք առաջադրանքը ցուցակին
+            taskInput.value = ''; // Մաքրում ենք տեքստի դաշտը
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add Task</button>
+
+    <div id="taskList"></div>
+
+    <script>
+        function addTask() {
+            var taskText = document.getElementById("taskInput").value;
+            if (taskText === "") return;
+
+            var taskDiv = document.createElement("div");
+            taskDiv.textContent = taskText;
+
+            taskDiv.onclick = function() {
+                if (taskDiv.style.textDecoration === "line-through") {
+                    taskDiv.style.textDecoration = "";
+                } else {
+                    taskDiv.style.textDecoration = "line-through";
+                }
+            };
+
+            var deleteBtn = document.createElement("button");
+            deleteBtn.textContent = "Delete";
+            deleteBtn.onclick = function() {
+                taskDiv.remove();
+            };
+
+            taskDiv.appendChild(deleteBtn);
+            document.getElementById("taskList").appendChild(taskDiv);
+
+            document.getElementById("taskInput").value = "";
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
